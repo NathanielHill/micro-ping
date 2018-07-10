@@ -12,7 +12,6 @@ const latencyCheck = ({ port = '80', log = true, n = 10 }) => {
       res.end()
       if (log) console.log('Bad request to micro-ping! Query: ', req.url)
     } else {
-      console.log(HOST)
       ping.promise.probe(HOST, { min_reply: num })
         .then(r => {
           const data = {
