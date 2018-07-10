@@ -1,0 +1,30 @@
+{
+  "name": "micro-ping",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Simple ping utility for latency tests on Zeit Now",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NathanielHill/micro-ping.git"
+  },
+  "bugs": "https://github.com/NathanielHill/micro-ping/issues",
+  "homepage": "https://github.com/NathanielHill/micro-ping",
+  "author": "Nathaniel Hill <nata@goguna.com>",
+  "keywords": [
+    "microservice",
+    "micro-service",
+    "ping",
+    "latency",
+    "zeit",
+    "now"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "now": {
+  },
+  "dependencies": {
+    "ping": "^0.2.2"
+  }
+}
