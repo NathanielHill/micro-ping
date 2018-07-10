@@ -24,6 +24,10 @@ const latencyCheck = ({ port = '80', log = true, n = 10 }) => {
           res.end(JSON.stringify(data))
           if (log) console.log(JSON.stringify(data))
         })
+        .catch(e => {
+          console.log(e.message)
+          res.end()
+        })
     }
   }).listen(port)
 }
