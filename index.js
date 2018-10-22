@@ -6,11 +6,11 @@ const latencyCheck = ({ port = '80', log = true, n = 10 }) => {
   createServer((req, res) => {
     const HOST = parse(req.url, true).query.host
     const N = parse(req.url, true).query.n
-    const num = N ? N : n
+    const num = N || n
     if (!HOST) {
       res.writeHead(400)
       res.end()
-      if (log) console.log('Bad request to micro-ping! Query: ', req.url)
+      if (log && req.url !== '/favicon.ico') console.log('Bad request to micro-ping! Query: ', req.url)
     } else {
       ping.promise.probe(HOST, { min_reply: num })
         .then(r => {

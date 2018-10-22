@@ -22,8 +22,6 @@
   "scripts": {
     "start": "node server.js"
   },
-  "now": {
-  },
   "dependencies": {
     "ping": "^0.2.2"
   }
