@@ -1,5 +1,7 @@
 # micro-ping
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/NathanielHill/micro-ping.svg)](https://greenkeeper.io/)
+
 Simple utility for testing network latency from Zeit datacenters
 
 ## Usage
