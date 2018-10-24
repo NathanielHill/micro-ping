@@ -3,14 +3,15 @@
 [![npm version](https://badge.fury.io/js/micro-ping.svg)](https://badge.fury.io/js/micro-ping)
 [![Greenkeeper badge](https://badges.greenkeeper.io/NathanielHill/micro-ping.svg)](https://greenkeeper.io/)
 
-Simple utility for testing network latency from [Zeit
-datacenters](https://zeit.co/docs/features/scaling#data-centers)
+Simple utility for testing network latency from [Zeit](https://zeit.co)
+[datacenters](https://zeit.co/docs/features/scaling#data-centers)
 
 Can also be imported and used a node module.
 
 ## Usage
 <details>
 <summary>Deployed to Zeit Now</summary>
+
 
 If you haven't installed `now` already, start by following [these instructions](https://zeit.co/docs/getting-started/installation)
 
@@ -46,6 +47,7 @@ $ curl "<deployment-url>/?host=example.com&n=100"
 
 <details>
 <summary>As a node module</summary>
+
 
 Can also be used as a node module in your own project.
 
