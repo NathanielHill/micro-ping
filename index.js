@@ -2,7 +2,7 @@ const { createServer } = require('http')
 const { parse } = require('url')
 const ping = require('ping')
 
-const latencyCheck = ({ port = '80', log = true, n = 10 }) => {
+const microPing = ({ port = '80', log = true, n = 10 }) => {
   createServer((req, res) => {
     const HOST = parse(req.url, true).query.host
     const N = parse(req.url, true).query.n
@@ -32,4 +32,4 @@ const latencyCheck = ({ port = '80', log = true, n = 10 }) => {
   }).listen(port)
 }
 
-module.exports = latencyCheck
+module.exports = microPing
